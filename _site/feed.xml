@@ -7,6 +7,15 @@
     <description>This is a longer description about your blog.</description>
     <language>en</language>
     <item>
+      <title>Blog under construction</title>
+      <link>https://example.com/blog/posts/2025/samplePost/</link>
+      <description>&lt;p&gt;Hi there! If you&#39;re reading this, you&#39;ve wandered into the still-under-construction blog component of my website. The site&#39;s still very new and I&#39;m still testing some things, so the rest of the blog posts here aren&#39;t super interesting. Come back soon for actual genuine redding thoughts, and not just lorem ipsum!&lt;/p&gt;
+</description>
+      <pubDate>Wed, 28 May 2025 19:00:00 CDT</pubDate>
+      <dc:creator>Your Name</dc:creator>
+      <guid>https://example.com/blog/posts/2025/samplePost/</guid>
+    </item>
+    <item>
       <title>Fifth post</title>
       <link>https://example.com/blog/posts/2025/fifthPost/</link>
       <description>&lt;p&gt;Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.&lt;/p&gt;
