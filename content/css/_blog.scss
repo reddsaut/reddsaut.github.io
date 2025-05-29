@@ -1,0 +1,9 @@
+@use 'base';
+
+.post-title {
+    border-bottom: 1px dashed;
+    border-color: base.$maintext;
+    padding-bottom: 0.5ex;
+    margin-bottom: 0.5ex;
+    margin-top: 1.5ex;
+}

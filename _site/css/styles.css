@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css?family=Georgia:400,700,900|Caprasimo");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  color-scheme: light dark;
+  background-color: light-dark(#ffe, #011);
+  color: light-dark(#011, white);
+  font-family: Georgia, serif;
+}
+
+body {
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+p, h2 {
+  margin-bottom: 0.5em;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+  grid-auto-rows: 12.5rem;
+  grid-auto-flow: dense;
+  gap: 0.25rem;
+}
+.gallery figure {
+  container: figure/inline-size;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: minmax(0, 1fr);
+}
+.gallery figure img {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+  grid-area: 1/1/-1/-1;
+}
+.gallery figcaption {
+  grid-area: 1/1/-1/-1;
+  align-self: end;
+  z-index: 1;
+  padding: 1em 15% 1em 1em;
+  color: #111;
+  font-size: 0.875rem;
+  line-height: 1.3;
+  background: rgba(200, 200, 200, 0.5);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s ease-in-out;
+}
+.gallery figcaption p {
+  display: -webkit-box;
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.gallery figure:hover figcaption {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (width > 600px) {
+  .gallery figure:nth-child(1) {
+    grid-area: span 2/span 2;
+  }
+}
+.post-title {
+  border-bottom: 1px dashed;
+  border-color: light-dark(#011, white);
+  padding-bottom: 0.5ex;
+  margin-bottom: 0.5ex;
+  margin-top: 1.5ex;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: block;
+  overflow: hidden;
+  border-bottom: 1px solid;
+  border-color: light-dark(#011, white);
+}
+nav li {
+  float: right;
+}
+nav li:first-child {
+  float: left;
+}
+nav a {
+  display: block;
+  padding: 6px 12px;
+}
+nav a.current {
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+  color: light-dark(oklch(35% 0.6 11deg), oklch(90% 0.16 111deg));
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  height: 2rem;
+  margin: 0;
+  margin-top: -1rem;
+  padding-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+#content {
+  min-height: calc(100vh - 2rem - 3rem - 5.5rem);
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+footer {
+  margin-top: 0;
+  margin-bottom: -1rem;
+  height: 3rem;
+  padding-top: 1rem;
+}
+footer #builtwith {
+  float: right;
+}

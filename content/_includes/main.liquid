@@ -1,0 +1,42 @@
+---
+title: Default title
+current: home
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ title }}</title>
+  </head>
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="/css/styles.css">
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/"><b>redding sauter</b></a></li>
+          <li><a{% if current == "about" %} class="current"{% endif %} href="/">about</a></li>
+          <li><a href="/res/resume.pdf" target="blank">résumé</a></li>
+          <li><a{% if current == "projects" %} class="current"{% endif %} href="/projects">projects</a></li>
+          <li><a{% if current == "art" %} class="current"{% endif %} href="/art">art</a></li>
+          <li><a{% if current == "blog" %} class="current"{% endif %} href="/blog/archive">blog</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="content">
+
+      {{ content }}
+    </div>
+
+    <footer>
+      <p id="builtwith">
+        <em>Built with {{ eleventy.generator }}</em>
+      </p>
+    </footer>
+
+  </body>
+</html>

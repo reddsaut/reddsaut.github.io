@@ -1,0 +1,73 @@
+@use 'base';
+@use 'gallery';
+@use 'blog';
+
+@import url("https://fonts.googleapis.com/css?family=Georgia:400,700,900|Caprasimo");
+
+// h1 {
+//     font-family: 'Caprasimo';
+//     font-weight: normal;
+// }
+
+nav {
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: block;
+        overflow: hidden;
+        border-bottom: 1px solid;
+        border-color: base.$maintext;
+    }
+
+    li {
+        // so this does reverse the order, which is silly
+        float: right;
+    }
+    li:first-child {
+        float: left;
+    }
+
+    a {
+        display: block;
+        padding: 6px 12px;
+    }
+    a.current {
+        text-decoration: underline;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: base.$accent-color;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    height: base.$header-height;
+    margin: 0;
+    // also jank. fix?
+    margin-top: -1rem;
+    padding-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+#content {
+    // janky solution. fix?
+    min-height: calc(100vh - base.$header-height - base.$footer-height - 5.5rem);
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+footer {
+    margin-top: 0;
+    margin-bottom: -1rem;
+    height: base.$footer-height;
+    padding-top: 1rem;
+
+    #builtwith {
+        float: right;
+    }
+}

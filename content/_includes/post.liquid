@@ -1,0 +1,20 @@
+---
+layout: main
+current: blog
+---
+
+<h2>{{ title }}</h2>
+
+<p>
+  <strong>Posted:
+  </strong>
+  {{ date | niceDate }}<br/>
+  <strong>Categories:</strong>
+  {% for cat in categories %}
+    <a href="/blog/categories/{{ cat | slugify }}">{{ cat }}</a>
+    {% unless forloop.last %},
+    {% endunless %}
+  {% endfor %}
+</p>
+
+{{ content }}
