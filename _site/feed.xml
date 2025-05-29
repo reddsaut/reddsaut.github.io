@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="https://example.com/" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:base="https://example.com/reddsaut.github.io/" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog Title</title>
-    <link>https://example.com/</link>
-    <atom:link href="https://example.com/feed.xml" rel="self" type="application/rss+xml" />
+    <link>https://example.com/reddsaut.github.io/</link>
+    <atom:link href="https://example.com/reddsaut.github.io/feed.xml" rel="self" type="application/rss+xml" />
     <description>This is a longer description about your blog.</description>
     <language>en</language>
     <item>
       <title>Fifth post</title>
-      <link>https://example.com/blog/posts/2025/fifthPost/</link>
+      <link>https://example.com/reddsaut.github.io/blog/posts/2025/fifthPost/</link>
       <description>&lt;p&gt;Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.&lt;/p&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.&lt;/p&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.&lt;/p&gt;
@@ -17,11 +17,11 @@
 </description>
       <pubDate>Thu, 01 May 2025 19:00:00 CDT</pubDate>
       <dc:creator>Your Name</dc:creator>
-      <guid>https://example.com/blog/posts/2025/fifthPost/</guid>
+      <guid>https://example.com/reddsaut.github.io/blog/posts/2025/fifthPost/</guid>
     </item>
     <item>
       <title>Fourth post</title>
-      <link>https://example.com/blog/posts/2025/fourthPost/</link>
+      <link>https://example.com/reddsaut.github.io/blog/posts/2025/fourthPost/</link>
       <description>&lt;p&gt;Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.&lt;/p&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.&lt;/p&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.&lt;/p&gt;
@@ -30,22 +30,22 @@
 </description>
       <pubDate>Thu, 17 Apr 2025 19:00:00 CDT</pubDate>
       <dc:creator>Your Name</dc:creator>
-      <guid>https://example.com/blog/posts/2025/fourthPost/</guid>
+      <guid>https://example.com/reddsaut.github.io/blog/posts/2025/fourthPost/</guid>
     </item>
     <item>
       <title>Third post with a longer title</title>
-      <link>https://example.com/blog/posts/2025/thirdPost/</link>
+      <link>https://example.com/reddsaut.github.io/blog/posts/2025/thirdPost/</link>
       <description>&lt;p&gt;Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.&lt;/p&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.&lt;/p&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.&lt;/p&gt;
 </description>
       <pubDate>Wed, 05 Mar 2025 18:00:00 CST</pubDate>
       <dc:creator>Your Name</dc:creator>
-      <guid>https://example.com/blog/posts/2025/thirdPost/</guid>
+      <guid>https://example.com/reddsaut.github.io/blog/posts/2025/thirdPost/</guid>
     </item>
     <item>
       <title>Second post</title>
-      <link>https://example.com/blog/posts/2025/secondPost/</link>
+      <link>https://example.com/reddsaut.github.io/blog/posts/2025/secondPost/</link>
       <description>&lt;p&gt;Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.&lt;/p&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.&lt;/p&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.&lt;/p&gt;
@@ -54,11 +54,11 @@
 </description>
       <pubDate>Sun, 02 Feb 2025 18:00:00 CST</pubDate>
       <dc:creator>Your Name</dc:creator>
-      <guid>https://example.com/blog/posts/2025/secondPost/</guid>
+      <guid>https://example.com/reddsaut.github.io/blog/posts/2025/secondPost/</guid>
     </item>
     <item>
       <title>First post</title>
-      <link>https://example.com/blog/posts/2025/firstPost/</link>
+      <link>https://example.com/reddsaut.github.io/blog/posts/2025/firstPost/</link>
       <description>&lt;p&gt;Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.&lt;/p&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.&lt;/p&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.&lt;/p&gt;
@@ -67,7 +67,7 @@
 </description>
       <pubDate>Tue, 31 Dec 2024 18:00:00 CST</pubDate>
       <dc:creator>Your Name</dc:creator>
-      <guid>https://example.com/blog/posts/2025/firstPost/</guid>
+      <guid>https://example.com/reddsaut.github.io/blog/posts/2025/firstPost/</guid>
     </item>
   </channel>
 </rss>
