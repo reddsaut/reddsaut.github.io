@@ -16,9 +16,6 @@ Hi! i'm redding and I do a lot of things. This is my personal website, built usi
 
 - restructure 'art.json' to 'pottery.json' or similar to allow different galleries for different media?
 
-- restructuring/renaming/connecting to git
-- deployment
-
 ## refs:
 
 - https://cfjedimaster.github.io/eleventy-blog-guide/guide.html
