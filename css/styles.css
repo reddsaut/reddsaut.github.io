@@ -12,19 +12,6 @@
   font-family: Georgia, serif;
 }
 
-body {
-  max-width: 40rem;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 1rem;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-p, h2 {
-  margin-bottom: 0.5em;
-}
-
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
@@ -83,20 +70,32 @@ p, h2 {
   margin-top: 1.5ex;
 }
 
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: block;
-  overflow: hidden;
+nav {
+  display: flex;
+  place-content: space-between;
   border-bottom: 1px solid;
   border-color: light-dark(#011, white);
 }
-nav li {
-  float: right;
+@media (width <= 35em) {
+  nav {
+    font-size: larger;
+    flex-direction: column;
+  }
 }
-nav li:first-child {
-  float: left;
+nav #redding {
+  font-weight: bold;
+}
+nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+@media (width <= 35em) {
+  nav ul {
+    flex-direction: column;
+  }
 }
 nav a {
   display: block;
@@ -116,25 +115,44 @@ a:hover {
 }
 
 header {
-  height: 2rem;
   margin: 0;
-  margin-top: -1rem;
   padding-top: 2rem;
   margin-bottom: 3rem;
 }
 
 #content {
-  min-height: calc(100vh - 2rem - 3rem - 5.5rem);
   margin-top: 0;
   margin-bottom: 2rem;
 }
 
 footer {
   margin-top: 0;
-  margin-bottom: -1rem;
   height: 3rem;
   padding-top: 1rem;
+  display: flex;
+  place-content: space-between;
 }
-footer #builtwith {
-  float: right;
+@media (width <= 26em) {
+  footer #builtwith {
+    display: none;
+  }
+}
+
+body {
+  max-width: 40rem;
+  min-width: 12em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: large;
+  display: flex;
+  flex-direction: column;
+  place-content: space-between;
+  min-height: 100vh;
+}
+
+p, h2 {
+  margin-bottom: 0.5em;
 }
