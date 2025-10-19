@@ -1,6 +1,6 @@
-@use 'base';
-@use 'gallery';
-@use 'blog';
+@use "base";
+@use "gallery";
+@use "blog";
 
 @import url("https://fonts.googleapis.com/css?family=Georgia:400,700,900|Caprasimo");
 
@@ -10,22 +10,31 @@
 // }
 
 nav {
+    display: flex;
+    place-content: space-between;
+    border-bottom: 1px solid;
+    border-color: base.$maintext;
+
+
+    @media (width <= 35em) {
+        font-size: larger;
+        flex-direction: column;
+        // align-items: center;
+    }
+
+    #redding {
+        font-weight: bold;
+    }
     ul {
+        display: flex;
+        @media (width <= 35em) {
+            flex-direction: column;
+            // align-items: center;
+        }
         margin: 0;
         padding: 0;
         list-style: none;
-        display: block;
         overflow: hidden;
-        border-bottom: 1px solid;
-        border-color: base.$maintext;
-    }
-
-    li {
-        // so this does reverse the order, which is silly
-        float: right;
-    }
-    li:first-child {
-        float: left;
     }
 
     a {
@@ -46,28 +55,47 @@ a:hover {
 }
 
 header {
-    height: base.$header-height;
     margin: 0;
-    // also jank. fix?
-    margin-top: -1rem;
     padding-top: 2rem;
     margin-bottom: 3rem;
 }
 
 #content {
-    // janky solution. fix?
-    min-height: calc(100vh - base.$header-height - base.$footer-height - 5.5rem);
     margin-top: 0;
     margin-bottom: 2rem;
 }
 
 footer {
     margin-top: 0;
-    margin-bottom: -1rem;
     height: base.$footer-height;
     padding-top: 1rem;
 
+    display: flex;
+    place-content: space-between;
+    
     #builtwith {
-        float: right;
+        @media(width <= 26em) {
+            display:none;
+        }
     }
+}
+
+body {
+    max-width: 40rem;
+    min-width: 12em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: large;
+    
+    display:flex;
+    flex-direction: column;
+    place-content: space-between;
+    min-height: 100vh;
+}
+
+p, h2 {
+    margin-bottom: 0.5em;
 }
