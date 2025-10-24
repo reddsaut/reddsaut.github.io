@@ -6,12 +6,14 @@ current: art
 <h2>Ceramics, 2025</h2>
 <div class="gallery">
   {% for image in art reversed %}
-    <figure>
-      <img src="{{ image.dir | append: image.src }}" alt="{{ image.alt }}">
-      <figcaption>
-        <h3>{{ image.title }}</h3>
-        <p>{{ image.alt }}</p>
-      </figcaption>
-    </figure>
+    <a href="{{ image.title | slugify }}/">
+      <figure>
+        <img src="{{ image.dir | append: image.src }}" alt="{{ image.alt }}">
+        <figcaption>
+          <h3>{{ image.title }}</h3>
+          <p>{{ image.alt }}</p>
+        </figcaption>
+      </figure>
+    </a>
   {% endfor %}
 </div>

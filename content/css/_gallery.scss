@@ -5,6 +5,12 @@
     grid-auto-flow: dense;
     gap: 0.25rem;
 
+    a {
+        display: grid;
+    }
+    a:hover {
+        text-decoration: none;
+    }
     figure {
         container: figure / inline-size;
         overflow: hidden;
