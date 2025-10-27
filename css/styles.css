@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: large;
 }
 
 :root {
@@ -26,13 +27,16 @@
   grid-template-columns: minmax(0, 1fr);
   grid-template-rows: minmax(0, 1fr);
 }
-.gallery figure img {
-  inline-size: 100%;
-  block-size: 100%;
-  object-fit: cover;
+.gallery figure a {
   grid-area: 1/1/-1/-1;
 }
+.gallery figure img {
+  object-fit: cover;
+  inline-size: 100%;
+  block-size: 100%;
+}
 .gallery figcaption {
+  pointer-events: none;
   grid-area: 1/1/-1/-1;
   align-self: end;
   z-index: 1;
@@ -146,7 +150,6 @@ body {
   padding: 1rem;
   margin-top: 0;
   margin-bottom: 0;
-  font-size: large;
   display: flex;
   flex-direction: column;
   place-content: space-between;
@@ -155,4 +158,17 @@ body {
 
 p, h2 {
   margin-bottom: 0.5em;
+}
+
+#portrait {
+  width: 33%;
+  float: right;
+  margin-left: 1em;
+}
+
+#artwork {
+  max-width: 20rem;
+  max-height: 20lh;
+  float: right;
+  margin-left: 1em;
 }
