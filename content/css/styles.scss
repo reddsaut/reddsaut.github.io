@@ -88,7 +88,6 @@ body {
     padding: 1rem;
     margin-top: 0;
     margin-bottom: 0;
-    font-size: large;
     
     display:flex;
     flex-direction: column;
@@ -98,4 +97,17 @@ body {
 
 p, h2 {
     margin-bottom: 0.5em;
+}
+
+#portrait {
+    width: 33%;
+    float: right;
+    margin-left: 1em;
+}
+
+#artwork {
+    max-width: 20rem;
+    max-height: 20lh;
+    float: right;
+    margin-left: 1em;
 }

@@ -45,12 +45,12 @@ export default async function(eleventyConfig) {
 		},
 		metadata: {
 			language: "en",
-			title: "Blog Title",
-			subtitle: "This is a longer description about your blog.",
-			base: "https://example.com/",
+			title: "redding",
+			subtitle: "I'm redding, I do a lot of things, sometimes I write about them.",
+			base: "https://reddsaut.github.io",
 			author: {
-				name: "Your Name",
-				email: "", // Optional
+				name: "redding sauter",
+				email: "reddingsauter@gmail.com", // Optional
 			}
 		}
 	});

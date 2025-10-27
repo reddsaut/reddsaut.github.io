@@ -4,6 +4,7 @@
         "date": "April 13, 2025",
         "src": "applesInside.jpeg",
         "alt": "Two apple-shaped stoneware bowls with a drippy red-green glaze",
+        "description": "",
         "dir": "/res/art/"
     },
     {
@@ -11,41 +12,47 @@
         "date": "April 13, 2025",
         "src": "applesOutside.jpeg",
         "alt": "Bottoms of two apple-shaped stoneware bowls with a drippy red-green glaze. One has initials \"r.s.\" in the foot well, while the other sports a carved cursive \"redding\" as its makers' mark.",
+        "description": "",
         "dir": "/res/art/"
     },
     {
-        "title": "Mug 1",
+        "title": "Pinch handle mug",
         "date": "April 30, 2025",
         "src": "tabbyHandle.jpeg",
         "alt": "A small stoneware mug with a red-green glaze and a pinched square hand-built handle.",
+        "description": "",
         "dir": "/res/art/"
     },
     {
-        "title": "Mug 2",
+        "title": "Large drippy mug",
         "date": "April 30, 2025",
         "src": "bigDrippy.jpeg",
         "alt": "A medium-sized stoneware mug with a drippy red-black glaze and a rustic appearance.",
+        "description": "",
         "dir": "/res/art/"
     },
     {
-        "title": "Mug 3",
+        "title": "Small drippy mug",
         "date": "April 30, 2025",
         "src": "littleDrippy.jpeg",
         "alt": "A small stoneware mug with a drippy red-black glaze and a rustic appearance. Some small drips of glaze run to the bottom of the foot.",
+        "description": "",
         "dir": "/res/art/"
     },
     {
-        "title": "Mug 4",
+        "title": "Teacup",
         "date": "April 30, 2025",
         "src": "greenTea.jpeg",
         "alt": "A large green stoneware teacup with a playful handle and a white interior.",
+        "description": "",
         "dir": "/res/art/"
     },
     {
-        "title": "Mug 5",
+        "title": "Copper-colored mug",
         "date": "April 30, 2025",
         "src": "coppery.jpeg",
         "alt": "A copper-colored stoneware mug.",
+        "description": "",
         "dir": "/res/art/"
     },
     {
@@ -53,6 +60,7 @@
         "date": "April 30, 2025",
         "src": "mugs.jpeg",
         "alt": "A collection of stoneware mugs.",
+        "description": "",
         "dir": "/res/art/"
     }
 ]

@@ -1,0 +1,17 @@
+---
+pagination:
+  data: art
+  size: 1
+  alias: artwork
+permalink: "art/{{ artwork.title | slugify }}/"
+layout: main
+current: art
+eleventyComputed:
+  title: "{{ artwork.title }}"
+---
+
+<h2>{{ artwork.title }}</h2>
+
+<img src="{{ artwork.dir }}{{ artwork.src }}" id="artwork">
+
+{{ artwork.description }}

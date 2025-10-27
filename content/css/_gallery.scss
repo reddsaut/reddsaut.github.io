@@ -12,14 +12,17 @@
         grid-template-columns: minmax(0, 1fr);
         grid-template-rows: minmax(0, 1fr);
 
+        a { 
+            grid-area: 1 / 1 / -1 / -1;
+        }
         img {
+            object-fit: cover;
             inline-size: 100%;
             block-size: 100%;
-            object-fit: cover;
-            grid-area: 1 / 1 / -1 / -1;
         }
     }
     figcaption {
+        pointer-events: none;
         grid-area: 1 / 1 / -1 / -1;
         align-self: end;
         z-index: 1;
