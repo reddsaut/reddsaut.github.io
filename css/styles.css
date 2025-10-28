@@ -167,8 +167,8 @@ p, h2 {
 }
 
 #artwork {
-  max-width: 20rem;
+  display: block;
   max-height: 20lh;
-  float: right;
-  margin-left: 1em;
+  margin-left: auto;
+  margin-right: auto;
 }
