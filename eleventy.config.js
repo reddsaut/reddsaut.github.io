@@ -1,9 +1,11 @@
 import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 import path from "node:path";
 import * as sass from "sass";
+import eleventyAutoCacheBuster from "eleventy-auto-cache-buster";
 
 export default async function(eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("content/res");
+	eleventyConfig.addPlugin(eleventyAutoCacheBuster);
 
     eleventyConfig.addExtension("scss", {
 		outputFileExtension: "css",
