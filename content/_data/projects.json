@@ -1,12 +1,48 @@
 [
     {
-        "title": "",
+        "title": "Grass Simulation",
+        "description": "A WebGL simulation of a field of grass, built using BabylonJS. This was my final project for a 3D Graphics course I took in Copenhagen, Denmark.",
+        "deploy_link": "",
+        "github_link": "",
+        "date": "",
+        "img_dir": "/res/project/",
+        "imgs": [
+            {
+                "src": "grass_1.png",
+                "alt": "A simulated field of grass, viewed from an angle"
+            },
+            {
+                "src": "grass_2.png",
+                "alt": "A simulated field of grass, viewed from above"
+            }
+        ]
+    },
+    {
+        "title": "project 2",
         "description": "",
         "deploy_link": "",
         "github_link": "",
         "date": "",
-        "cover_img": "",
         "img_dir": "",
-        "cover_alt": ""
+        "imgs": [
+            {
+                "src": "",
+                "alt": ""
+            }
+        ]
+    },
+    {
+        "title": "project 3",
+        "description": "",
+        "deploy_link": "",
+        "github_link": "",
+        "date": "",
+        "img_dir": "",
+        "imgs": [
+            {
+                "src": "",
+                "alt": ""
+            }
+        ]
     }
 ]

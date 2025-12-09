@@ -62,5 +62,109 @@
         "alt": "A collection of stoneware mugs.",
         "description": "",
         "dir": "/res/art/"
+    },
+    {
+        "title": "Apple Bowl",
+        "date": "April 30, 2025",
+        "src": "applebowl1.jpeg",
+        "alt": "The inside of an apple-shaped bowl with a white glaze and reddish-purple drips.",
+        "description": "Wheel-thrown stoneware, fired to cone 10 reduction.",
+        "dir": "/res/art/fall25/"
+    },
+    {
+        "title": "Dark Green Mug",
+        "date": "August 1, 2025",
+        "src": "darkgreenmugbottom.jpeg",
+        "alt": "The bottom of a large dark green mug with initials r.s.",
+        "description": "Wheel-thrown stoneware, fired to cone 10 reduction.",
+        "dir": "/res/art/fall25/"
+    },
+    {
+        "title": "Green Plate",
+        "date": "August 1, 2025",
+        "src": "greenplate2.jpeg",
+        "alt": "A medium-sized green plate with brown specks and a subtle spiral in the middle.",
+        "description": "Wheel-thrown stoneware, fired to cone 10 reduction.",
+        "dir": "/res/art/fall25/"
+    },
+    {
+        "title": "Green Plate 2",
+        "date": "December 9, 2025",
+        "src": "greenplate1.jpeg",
+        "alt": "A medium-sized green plate with brown specks and a subtle spiral in the middle.",
+        "description": "Wheel-thrown stoneware, fired to cone 10 reduction.",
+        "dir": "/res/art/fall25/"
+    },
+    {
+        "title": "Bowl",
+        "date": "December 9, 2025",
+        "src": "bowl.jpeg",
+        "alt": "A large shallow bowl with an angled foot. The outside is glazed red-green and the inside is glazed a marbled purple-red.",
+        "description": "Wheel-thrown stoneware, fired to cone 10 reduction.",
+        "dir": "/res/art/fall25/"
+    },
+    {
+        "title": "Pinched Jar",
+        "date": "September 16, 2025",
+        "src": "pinchjar.jpeg",
+        "alt": "A small pinch-built lidded jar, glazed reddish brown with a white handle on the lid.",
+        "description": "Pinch-built stoneware, fired to cone 10 reduction.",
+        "dir": "/res/art/fall25/"
+    },
+    {
+        "title": "Lilydale Leaf",
+        "date": "September 16, 2025",
+        "src": "pinchleaf.jpeg",
+        "alt": "A small red-green oak leaf shaped dish.",
+        "description": "Pinch-built stoneware, fired to cone 10 reduction.",
+        "dir": "/res/art/fall25/"
+    },
+    {
+        "title": "Soap Dish",
+        "date": "September 16, 2025",
+        "src": "pinchsoapdish.jpeg",
+        "alt": "A green-black pinched soap dish with a sloped section that drains into the sink.",
+        "description": "Pinch-built stoneware, fired to cone 10 reduction.",
+        "dir": "/res/art/fall25/"
+    },
+    {
+        "title": "Red Mug",
+        "date": "October 23, 2025",
+        "src": "redmug1.jpeg",
+        "alt": "A metallic red mug with a black inner glaze.",
+        "description": "Wheel-thrown stoneware, fired to cone 10 reduction.",
+        "dir": "/res/art/fall25/"
+    },
+    {
+        "title": "Red Mug 2",
+        "date": "October 23, 2025",
+        "src": "redmug2.jpeg",
+        "alt": "A metallic red mug with a black inner glaze.",
+        "description": "Wheel-thrown stoneware, fired to cone 10 reduction.",
+        "dir": "/res/art/fall25/"
+    },
+    {
+        "title": "Red Mug Bottom",
+        "date": "October 23, 2025",
+        "src": "redmugbottom.jpeg",
+        "alt": "On the base of this metallic red mug is a radial pattern originating at the join-point of the handle. Also at this join-point is a small maker's mark reading r s.",
+        "description": "Wheel-thrown stoneware, fired to cone 10 reduction.",
+        "dir": "/res/art/fall25/"
+    },
+    {
+        "title": "Set of Red Mugs",
+        "date": "October 23, 2025",
+        "src": "redmugs.jpeg",
+        "alt": "Five metallic red mugs. On one the bottom is visible and has a radial pattern on the base. On another the inside is visible and a subtle spiral is visible through a black glaze.",
+        "description": "Wheel-thrown stoneware, fired to cone 10 reduction.",
+        "dir": "/res/art/fall25/"
+    },
+    {
+        "title": "Pottery and Purpose",
+        "date": "December 9, 2025",
+        "src": "fall25pottery.jpeg",
+        "alt": "A collection of mugs, one bowl, and one plate.",
+        "description": "Wheel-thrown stoneware, fired to cone 10 reduction.",
+        "dir": "/res/art/fall25/"
     }
 ]
