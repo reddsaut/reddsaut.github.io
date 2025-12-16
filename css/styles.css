@@ -74,6 +74,30 @@
   margin-top: 1.5ex;
 }
 
+#blog-text p {
+  text-indent: 2em;
+}
+#blog-text p img {
+  max-width: 70%;
+  text-indent: 0;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  max-height: 25lh;
+}
+#blog-text blockquote {
+  margin-inline-start: 1em;
+}
+#blog-text blockquote p {
+  text-indent: 0;
+  color: light-dark(#077, #8aa);
+}
+#blog-text #refs-mla p {
+  text-indent: 1em hanging;
+}
+
 nav {
   display: flex;
   place-content: space-between;
