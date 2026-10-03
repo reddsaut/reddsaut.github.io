@@ -166,5 +166,109 @@
         "alt": "A collection of mugs, one bowl, and one plate.",
         "description": "Wheel-thrown stoneware, fired to cone 10 reduction.",
         "dir": "/res/art/fall25/"
+    },
+    {
+        "title": "Ginkgo Mug",
+        "date": "April 10, 2026",
+        "src": "ginkgoMug.jpeg",
+        "alt": "Large green mug with a ginkgo leaf accent.",
+        "description": "Slab built stoneware, fired to cone 10 reduction.",
+        "dir": "/res/art/spring26/"
+    },
+    {
+        "title": "Twist Mug",
+        "date": "May 01, 2026",
+        "src": "twistMug.jpeg",
+        "alt": "Red and blue mug with a twist.",
+        "description": "Wheel-thrown stoneware, fired to cone 10 reduction.",
+        "dir": "/res/art/spring26/"
+    },
+    {
+        "title": "Beer stein",
+        "date": "May 01, 2026",
+        "src": "bigStein.jpeg",
+        "alt": "Large brown mug.",
+        "description": "Wheel-thrown stoneware, fired to cone 10 reduction.",
+        "dir": "/res/art/spring26/"
+    },
+    {
+        "title": "Green Blate",
+        "date": "May 01, 2026",
+        "src": "blate.jpeg",
+        "alt": "Tall-walled plate.",
+        "description": "Wheel-thrown stoneware, fired to cone 10 reduction.",
+        "dir": "/res/art/spring26/"
+    },
+    {
+        "title": "Octopus Plates",
+        "date": "April 15, 2026",
+        "src": "octoPlates.jpeg",
+        "alt": "Stack of green plates with octopus designs.",
+        "description": "Wheel-thrown stoneware with screenprinted pattern, fired to cone 10 reduction.",
+        "dir": "/res/art/spring26/"
+    },
+    {
+        "title": "Green Bowl",
+        "date": "May 01, 2026",
+        "src": "greenBowl.jpeg",
+        "alt": "Spotted green bowl with an upturned rim.",
+        "description": "Wheel-thrown stoneware, fired to cone 10 reduction.",
+        "dir": "/res/art/spring26/"
+    },
+    {
+        "title": "Amber Bowls",
+        "date": "May 01, 2026",
+        "src": "amberBowls1.jpeg",
+        "alt": "Two stacked brown bowls.",
+        "description": "Wheel-thrown stoneware, fired to cone 10 reduction.",
+        "dir": "/res/art/spring26/"
+    },
+    {
+        "title": "Swirl Mug",
+        "date": "May 01, 2026",
+        "src": "swirlMug.jpeg",
+        "alt": "Green and red mug with a carved swirl.",
+        "description": "Wheel-thrown stoneware, fired to cone 10 reduction.",
+        "dir": "/res/art/spring26/"
+    },
+    {
+        "title": "Blue Bowl",
+        "date": "May 01, 2026",
+        "src": "blueBowl.jpeg",
+        "alt": "",
+        "description": "Wheel-thrown stoneware, fired to cone 10 reduction.",
+        "dir": "/res/art/spring26/"
+    },
+    {
+        "title": "Connection Teapot",
+        "date": "April 03, 2026",
+        "src": "teapot.jpeg",
+        "alt": "Blue teapot with a wooden top handle and a whittled wooden knob.",
+        "description": "Wheel-thrown stoneware fired to cone 10 reduction, manufactured handle, carved wood.",
+        "dir": "/res/art/spring26/"
+    },
+    {
+        "title": "Tools and pots",
+        "date": "May 01, 2026",
+        "src": "amberGroup.jpeg",
+        "alt": "Five pots arranged with the handmade tools used to make them.",
+        "description": "Wheel-thrown stoneware, fired to cone 10 reduction. Handmade tools, wood and metal.",
+        "dir": "/res/art/spring26/"
+    },
+    {
+        "title": "Drip Mug",
+        "date": "May 01, 2026",
+        "src": "dripMug.jpeg",
+        "alt": "Red mug with a small drip.",
+        "description": "Wheel-thrown stoneware, fired to cone 10 reduction.",
+        "dir": "/res/art/spring26/"
+    },
+    {
+        "title": "Ceramics II",
+        "date": "May 01, 2026",
+        "src": "group.jpeg",
+        "alt": "Arrangement of pottery.",
+        "description": "Wheel-thrown and hand built stoneware, fired to cone 10 reduction.",
+        "dir": "/res/art/spring26/"
     }
 ]
