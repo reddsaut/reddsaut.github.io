@@ -1,0 +1,9 @@
+{% assign image = project.imgs[0] %}
+
+<div class="project">
+	<img src="{{ project.img_dir }}{{ image.src }}">
+	<p>
+		<span class="project-title"><a href="/projects/{{ project.title | slugify }}">{{ project.title }}</a></span><br>
+		- {{ project.date }}
+	</p>
+</div>

@@ -1,0 +1,24 @@
+---
+pagination:
+  data: projects
+  size: 1
+  alias: project
+permalink: "/projects/{{ project.title | slugify }}/index.html"
+layout: main
+eleventyComputed:
+  title: "{{ project.title }}"
+current: projects
+---
+
+<h2>{{ project.title }}</h2>
+
+{% assign description = project.description | split: "\n" %} {% # wowie! Paragraphs! %}
+
+{% for para in description %}
+
+  <p>{{ para }}</p>
+
+{% endfor %}
+
+<p> Try it out for yourself <a href="{{ project.deploy_link }}">here.</a></p>
+

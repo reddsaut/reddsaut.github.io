@@ -1,0 +1,30 @@
+---
+pagination:
+  data: projects
+  size: 5
+  alias: project
+  reverse: true
+layout: main
+title: projects
+current: projects
+---
+
+{% for project in projects %}
+  {% include "partials/projectPreview.liquid" %}
+{% endfor %}
+
+{% if projects.length > 5 %}
+  <p>
+    {% if pagination.href.previous %}
+      <a href=" {{ pagination.href.previous }}">Previous</a>
+    {% else %}
+      Previous
+    {% endif %}
+    /
+    {% if pagination.href.next %}
+      <a href=" {{ pagination.href.next }}">Next</a>
+    {% else %}
+      Next
+    {% endif %}
+  </p>
+{% endif %}

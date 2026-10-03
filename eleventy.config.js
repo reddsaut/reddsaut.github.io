@@ -2,10 +2,14 @@ import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 import path from "node:path";
 import * as sass from "sass";
 import eleventyAutoCacheBuster from "eleventy-auto-cache-buster";
+import tinysvg from "@sardine/eleventy-plugin-tinysvg";
 
 export default async function(eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("content/res");
 	eleventyConfig.addPlugin(eleventyAutoCacheBuster);
+	eleventyConfig.addPlugin(tinysvg, {
+		baseUrl: 'content/res/svg/',
+	});
 
     eleventyConfig.addExtension("scss", {
 		outputFileExtension: "css",

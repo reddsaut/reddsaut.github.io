@@ -2,9 +2,9 @@
     {
         "title": "Grass Simulation",
         "description": "A WebGL simulation of a field of grass, built using BabylonJS. This was my final project for a 3D Graphics course I took in Copenhagen, Denmark.",
-        "deploy_link": "",
+        "deploy_link": "https://www.babylonjs-playground.com/#YAEL2M",
         "github_link": "",
-        "date": "",
+        "date": "December 2025",
         "img_dir": "/res/project/",
         "imgs": [
             {
@@ -18,16 +18,32 @@
         ]
     },
     {
-        "title": "project 2",
-        "description": "",
-        "deploy_link": "",
+        "title": "Degrowth",
+        "description": "For years you’ve lived peacefully in your cottage, but a smog is descending, and your fields grow barren. Now, you must embark on a mission deep into the belly of the beast, navigating hostile industrial landscapes and carving a swath of floral oasis in your path. If you tear down this world of gears and machines, can you reclaim these barren lands, or will you leave the people here to doom and despair?\nThis is a physics-based and (partially) hand drawn 2D platformer using a grappling hook mechanic. Use W,A,S,D (recommended!) or arrow keys to navigate, SPACE to jump off the ground and walls, and SHIFT to anchor your grapple to the nearest flower bloom, then SPACE to jump out of your grapple.\nStudent project written in Unity and C#, Degrowth was made for COMP 325/ENGL 224 Video Games: Coding and Narrative at Macalester College, taught by Professors James Dawes and Bret Jackson.",
+        "deploy_link": "HTTPS://NICHOLASLOBAUGH.ITCH.IO/DEGROWTH",
         "github_link": "",
-        "date": "",
-        "img_dir": "",
+        "date": "Spring 2024",
+        "img_dir": "/res/project/",
         "imgs": [
             {
-                "src": "",
-                "alt": ""
+                "src": "degrowth_1.png",
+                "alt": "Fox character swinging from a vine"
+            },
+            {
+                "src": "degrowth_2.png",
+                "alt": "Fox character with descriptive keyboard prompts"
+            },
+            {
+                "src": "degrowth_3.png",
+                "alt": "Fox character platforming around spinning blades"
+            },
+            {
+                "src": "degrowth_4.png",
+                "alt": "Fox character in a moodily lit room with spinning blades"
+            },
+            {
+                "src": "degrowth_5.png",
+                "alt": "Fox character in a moodily lit room with a lever"
             }
         ]
     },
@@ -36,7 +52,7 @@
         "description": "",
         "deploy_link": "",
         "github_link": "",
-        "date": "",
+        "date": "2021-01-01",
         "img_dir": "",
         "imgs": [
             {
