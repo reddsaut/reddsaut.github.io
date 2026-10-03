@@ -98,6 +98,21 @@
   text-indent: 1em hanging;
 }
 
+.project {
+  margin-bottom: 0.5em;
+  display: flex;
+  flex-direction: row;
+}
+.project img {
+  width: 6lh;
+  height: 6lh;
+  object-fit: cover;
+  margin-right: 0.5em;
+}
+.project .project-title {
+  font-weight: bold;
+}
+
 nav {
   display: flex;
   place-content: space-between;

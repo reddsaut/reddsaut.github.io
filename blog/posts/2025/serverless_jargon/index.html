@@ -1,0 +1,150 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Unexpected Benefits:  How Marketing Jargon Obscures Use Cases in Web Development</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  </head>
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="/css/styles.css?v=f91b28825adc">
+  <body>
+    <div>
+      <header>
+        <nav>
+          <a id="redding" href="/">redding sauter</a>
+          <ul>
+            <li><a href="/">about</a></li>
+            <li><a href="/res/resume.pdf" target="blank">résumé</a></li>
+            <!-- <li><a href="/projects">projects</a></li> -->
+            <li><a href="/art">art</a></li>
+            <li><a class="current" href="/blog/archive">blog</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div id="content">
+
+        
+<h2>Unexpected Benefits:  How Marketing Jargon Obscures Use Cases in Web Development</h2>
+
+<p>
+  <strong>Posted:
+  </strong>
+  12/10/2025<br/>
+  <strong>Categories:</strong>
+  
+    <a href="/blog/categories/software">software</a>
+    ,
+    
+  
+    <a href="/blog/categories/webdev">webdev</a>
+    
+  
+</p>
+
+<div id=blog-text><ul>
+<li>paul i need help</li>
+<li>the svgs are broken and i don't know how to get code formatting to work</li>
+<li>return book</li>
+</ul>
+<p>In a sea of buzzwords and marketing lingo, determining what the hot new technology actually does, and more importantly, whether your application actually needs it, can feel Sisyphean. Learning the basics of how a service works is a boulder worth rolling, because sometimes these tools become useful in ways you’d never expect. This is one such case, in which a tool designed to solve a problem we don’t have was useful for a problem it wasn’t designed to solve.</p>
+<h2>Wanderlust:  Deploying a Backend Heavy Web App</h2>
+<p>Wanderlust is a routing engine, meaning that at its core, it provides the user with a plausible route from point A to point B.  Apple and Google invest a huge amount of resources into providing the most time efficient route possible, using complex algorithms to uncover shortcuts previously privy only to locals.  If you’ve noticed an uptick in traffic on smaller roads where you live, <a href="https://www.citymonitor.ai/analysis/google-maps-local-traffic/?cf-view">these services may be the reason</a>.</p>
+<p>The Wanderlust team (which included James, but not Redding) elected to forgo efficiency entirely, instead hoping to generate the most enjoyable route.  Their focus was on pedestrians and cyclists, groups most likely to tolerate a few extra minutes of travel time in exchange for a more pleasant experience.  This meant they needed complete control over the routing algorithm, with the ability to assign edge weights based on whatever factors they wanted (e.g. quiet streets, scenic trails, and walks through parks).</p>
+<p>It was with this purpose in mind that they elected to use a PostgreSQL geospatial database, allowing them access to the PGRouting library.  PGRouting allows the user to set edge weights manually, letting  the developers create their own secret formula for the most pleasant routes, a process of trial and error that probably deserves its own post.</p>
+<h3>When it works, it looks like this:</h3>
+<p><img src="/res/blog/2025/wander_working.png?v=21406b471ece" alt="A pleasant bike route on our mapping engine"></p>
+<h3>Although sometimes it looks like this:</h3>
+<p><img src="/res/blog/2025/wander_broken.png?v=e73121be52c7" alt="A bike route on our mapping engine that traverses unpleasant busy streets"></p>
+<p>What you're seeing in these images is a basic frontend using Leaflet to approximate a routing service UI.  This frontend is written as a Javascript-heavy static SPA (single page application) which turns user input into coordinates readable by the database and displays routes.  A small Python HTTP server handles communication between the webpage and the database.</p>
+<h2>The Road to Supabase</h2>
+<p>Given our nonexistent budget, our first priority was finding our database a home with a free tier that suited our needs.  It turns out selecting suitable tools given these restraints is a problem deserving of its own post, which you can find here.  We settled on a managed Postgres service called Supabase for our backend, mostly because it provided the space we needed while affording us enough control over our data to not feel hamstringed.</p>
+<p>Managed databases fit into the larger Software as a Service industry.  Optimization, storage, compute, and scaling are handled by the provider, allowing the user to focus on their project’s functionality.  We control what data is put on our server, and we’re given access points to query that data, but everything else is a black box.  We don’t have to deal with the nitty gritty of how exactly data is stored and compute is allocated, but sometimes Supabase behaves in ways we don’t expect.</p>
+<h2>So What About the Server?</h2>
+<p>Let’s talk a little bit about the data pipelining of the Wanderlust prototype. From the static frontend your chosen locations are geocoded into latitude and longitude and sent via HTTP to a RESTful API, which makes the database calls to Postgres, where the PostGIS and pgRouting calculations happen.</p>
+<p><svg viewBox="0 0 655 164"><rect width="100" height="100" x="2" y="32" stroke="light-dark(#000 ,#fff)" stroke-width="4" rx="15" ry="15"/><switch><foreignObject width="100%" height="100%" overflow="visible" pointer-events="none" style="text-align:left"><div xmlns="http://www.w3.org/1999/xhtml" display="flex" style="align-items:unsafe center;justify-content:unsafe center;width:98px;height:1px;padding-top:82px;margin-left:3px"><div color="#000" font-size="0" style="box-sizing:border-box;text-align:center"><div color="light-dark(#000,#fff)" display="inline-block" font-family="Helvetica" font-size="12" pointer-events="all" style="line-height:1.2;white-space:normal;word-wrap:normal"><span color="light-dark(#000 ,#fff)"><font font-size="30">SPA Client</font></span></div></div></div></foreignObject><text x="52" y="86" fill="light-dark(#000000, #ffffff)" font-family="Helvetica" font-size="12" text-anchor="middle">SPA Client</text></switch><path fill="none" stroke="light-dark(#000 ,#fff)" stroke-miterlimit="10" stroke-width="4" d="M482 17c0-8.28 38.06-15 85-15 22.54 0 44.16 1.58 60.1 4.39C643.04 9.21 652 13.02 652 17v130c0 8.28-38.06 15-85 15s-85-6.72-85-15Z" pointer-events="all"/><path fill="none" stroke="light-dark(#000 ,#fff)" stroke-miterlimit="10" stroke-width="4" d="M652 17c0 8.28-38.06 15-85 15s-85-6.72-85-15" pointer-events="all"/><switch><foreignObject width="100%" height="100%" overflow="visible" pointer-events="none" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="text-align:left"><div xmlns="http://www.w3.org/1999/xhtml" display="flex" style="align-items:unsafe center;justify-content:unsafe center;width:168px;height:1px;padding-top:95px;margin-left:483px"><div color="#000" font-size="0" style="box-sizing:border-box;text-align:center"><div color="light-dark(#000,#fff)" display="inline-block" font-family="Helvetica" font-size="12" pointer-events="all" style="line-height:1.2;white-space:normal;word-wrap:normal"><font font-size="23">Postgres (PostGIS and pgRouting calculation)</font></div></div></div></foreignObject><text x="567" y="98" fill="light-dark(#000000, #ffffff)" font-family="Helvetica" font-size="12" text-anchor="middle">Postgres (PostGIS and pgRout...</text></switch><rect width="130" height="130" x="253" y="17" fill="none" stroke="light-dark(#000 ,#fff)" stroke-width="4" pointer-events="all" rx="19.5" ry="19.5"/><switch><foreignObject width="100%" height="100%" overflow="visible" pointer-events="none" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="text-align:left"><div xmlns="http://www.w3.org/1999/xhtml" display="flex" style="align-items:unsafe center;justify-content:unsafe center;width:128px;height:1px;padding-top:82px;margin-left:254px"><div color="#000" font-size="0" style="box-sizing:border-box;text-align:center"><div color="light-dark(#000,#fff)" display="inline-block" font-family="Helvetica" font-size="12" pointer-events="all" style="line-height:1.2;white-space:normal;word-wrap:normal"><font font-size="30">Python Server</font></div></div></div></foreignObject><text x="318" y="86" fill="light-dark(#000000, #ffffff)" font-family="Helvetica" font-size="12" text-anchor="middle">Python Server</text></switch><path fill="none" stroke="light-dark(#000 ,#fff)" stroke-miterlimit="10" stroke-width="3" d="m102 57 140.91-7" pointer-events="stroke"/><path fill="light-dark(#000 ,#fff)" stroke="light-dark(#000 ,#fff)" stroke-miterlimit="10" stroke-width="3" d="m249.65 49.67-8.77 4.94 2.03-4.61-2.47-4.38Z" pointer-events="all"/><switch><foreignObject width="100%" height="100%" overflow="visible" pointer-events="none" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="text-align:left"><div xmlns="http://www.w3.org/1999/xhtml" display="flex" style="align-items:unsafe center;justify-content:unsafe center;width:1px;height:1px;padding-top:51px;margin-left:176px"><div color="#000" font-size="0" style="box-sizing:border-box;text-align:center"><div color="light-dark(#000,#fff)" display="inline-block" font-family="Helvetica" font-size="11" pointer-events="all" style="line-height:1.2;white-space:nowrap"><span font-family="Roboto,sans-serif" style="white-space:pre-wrap"><font font-size="40">ϟ</font></span></div></div></div></foreignObject><text x="176" y="54" fill="light-dark(#000000, #ffffff)" font-family="Helvetica" font-size="11" text-anchor="middle">ϟ</text></switch><path fill="none" stroke="light-dark(#000 ,#fff)" stroke-miterlimit="10" stroke-width="3" d="m253 114.5-140.91-7" pointer-events="stroke"/><path fill="light-dark(#000 ,#fff)" stroke="light-dark(#000 ,#fff)" stroke-miterlimit="10" stroke-width="3" d="m105.35 107.17 9.21-4.05-2.47 4.38 2.03 4.61Z" pointer-events="all"/><switch><foreignObject width="100%" height="100%" overflow="visible" pointer-events="none" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="text-align:left"><div xmlns="http://www.w3.org/1999/xhtml" display="flex" style="align-items:unsafe center;justify-content:unsafe center;width:1px;height:1px;padding-top:114px;margin-left:179px"><div color="#000" font-size="0" style="box-sizing:border-box;text-align:center"><div color="light-dark(#000,#fff)" display="inline-block" font-family="Helvetica" font-size="11" pointer-events="all" style="line-height:1.2;white-space:nowrap"><span font-family="Roboto,sans-serif" style="white-space:pre-wrap"><font font-size="40">ϟ</font></span></div></div></div></foreignObject><text x="179" y="117" fill="light-dark(#000000, #ffffff)" font-family="Helvetica" font-size="11" text-anchor="middle">ϟ</text></switch><path fill="none" stroke="light-dark(#000 ,#fff)" stroke-miterlimit="10" stroke-width="3" d="M383 49.5h88.9" pointer-events="stroke"/><path fill="light-dark(#000 ,#fff)" stroke="light-dark(#000 ,#fff)" stroke-miterlimit="10" stroke-width="3" d="m478.65 49.5-9 4.5 2.25-4.5-2.25-4.5Z" pointer-events="all"/><path fill="none" stroke="light-dark(#000 ,#fff)" stroke-miterlimit="10" stroke-width="3" d="M482 114.5h-88.9" pointer-events="stroke"/><path fill="light-dark(#000 ,#fff)" stroke="light-dark(#000 ,#fff)" stroke-miterlimit="10" stroke-width="3" d="m386.35 114.5 9-4.5-2.25 4.5 2.25 4.5Z" pointer-events="all"/><switch><a xlink:href="https://www.drawio.com/doc/faq/svg-export-text-problems" target="_blank" transform="translate(0 -5)"><text x="50%" y="100%" font-size="10" text-anchor="middle">Text is not SVG - cannot display</text></a></switch></svg></p>
+<p>Deploying the server as written wasn’t an option (the framework used in the prototype isn’t web-ready), so we were in the perfect position to switch deployment strategies. Enter edge functions: a Supabase tool that can do the work of a RESTful API, is included in our Supabase plan, and has enough flexibility that we don’t need to reveal our secrets on our frontend.</p>
+<h2>Edge Functions and Serverless Computing:  A Brief Introduction to Web Dev Lingo</h2>
+<h3>Serverless:</h3>
+<p>Serverless computing is a confusing name for a deployment paradigm where your code runs on someone else’s server, and none of the server maintenance code is your responsibility. You supply code that runs when interacted with, your cloud vendor decides when that code starts up and shuts down based on user interaction.</p>
+<h3>Edge function:</h3>
+<p>Edge functions are serverless functions run at the edge, i.e. they are deployed to a CDN (Content Delivery Network) geographically close to your user. The geography of the internet is affected by real-world geography but not defined by it, so code being “close” to a user is measured in network hops.</p>
+<h3>Transaction pooler</h3>
+<p>There are a few different ways for a client to connect to a Postgres database. One is a direct connection: a persistent connection with the database that is maintained until it is closed. This is the fastest for persistent connections but opening and closing the connection is slow and resource intensive. A session pooler serves as a middleman which offers some management to a direct connection, such as the ability to reroute to different databases, but a connection is still open until it is manually closed. Lastly is transaction pooling, where the middleman pooler maintains a certain amount of persistent connections but doesn’t activate them until a database action is actually being performed. This is much faster for brief transient connections because a limited number of connections can serve more clients.</p>
+<p><img src="/res/blog/2025/transaction_pooler.svg" alt="A diagram describing how transaction poolers maintain and redirect connections"></p>
+<p>Supabase offers edge functions through the Deno javascript runtime.  Developers can write functions in javascript that run close to the user.  This is helpful if there are functions you need performed that don’t require accessing the PostgreSQL database, such as authentication or webhook reception, and you want these functions performed closer to the user (and therefore with lower latency) than if they needed to connect to the main database.  Supabase manages these connections using a server side transaction pooler, creating a serverless environment.</p>
+<p><img src="/res/blog/2025/severless.jpeg?v=fae5d268dacb" alt="A hilariously mislabeled diagram of how &quot;severless&quot; computing works"></p>
+<p>(Or should we say “severless” environment?)</p>
+<h2>So How Are These Things Useful to Us Anyway?</h2>
+<p>At first glance, edge functions seem completely irrelevant to our use case.  Every interaction between a Wanderlust user and the database is a request for a route.  While edge functions can be run in a location that is close to the user, our database is far less mobile.  Every routing query is ending up in the same place, and the speed advantage is entirely lost.</p>
+<p>At least, until you take another look at our project pipeline.  Right now the user enters data into our SPA, which is then passed to our python server, which formulates a query for the database.  The chart looks like this: Webpage → Python Server → Database.  Using edge functions, that becomes: Webpage → Python Server → Edge Function → Database.  We’re just adding an extra step.  Except… everything that our server can do, edge functions can also do.  Rather than sending requests to a permanently running server that we host in some fixed location, our SPA can send requests to a nearby Supabase node, then Supabase can process them for us.</p>
+<p>Now, our chart looks like this: Webpage → Edge Function → Database.  The number of links is the same, but remember, the connection to the edge function is always the shortest distance possible.  We’ve gone serverless and gained speed.</p>
+<p>The intended client for edge functions is not browser code, so none of the easy to find documentation included some crucial handlers for browser connections. Buried in a GitHub repository of code examples is a <a href="https://github.com/supabase/supabase/blob/master/examples/edge-functions/supabase/functions/browser-with-cors/index.ts">sample edge function</a> that handles CORS. Notably, your clients’ browser sends a CORS pre-flight request, which is an auto-generated HTTP request of type OPTIONS. If the server isn’t set up to accept that pre-flight request the actual request won’t be sent. In Deno that looks like this:</p>
+<pre><code>if (req.method === 'OPTIONS') {
+    return new Response('ok', { headers: corsHeaders })
+  }
+</code></pre>
+<p>These are the CORS headers we used, which allow traffic from anywhere on the web (this can be limited based on your needs and preferences):</p>
+<pre><code class="language-javascript">const corsHeaders = {
+  'Access-Control-Allow-Origin': '*',
+  'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type'
+};
+</code></pre>
+<p>And you also need to send those access headers with each response for a browser to read the response:</p>
+<pre><code>return new Response(JSON.stringify(data), {
+      headers: { ...corsHeaders, 'Content-Type': 'application/json' },
+      status: 200,
+    })
+  } catch (error) {
+    return new Response(JSON.stringify({ error: error.message }), {
+      headers: { ...corsHeaders, 'Content-Type': 'application/json' },
+      status: 400,
+    })
+  }
+</code></pre>
+<p>At first, it seemed like this approach worked!  Requests were being sent directly from the SPA and our edge function was spitting out a valid route.  However, before long, it became apparent that Supabase wasn’t thrilled with our ingenuity.</p>
+<p>One of the drawbacks of software as a service is that when you’re using a tool wrong, it rarely lets you know upfront, instead resorting to guerilla tactics.  We noticed that, seemingly randomly, our route requests would fail.  Rather than tell us why, Supabase was content with displaying 500 errors carrying no useful information.</p>
+<p><img src="/res/blog/2025/taxtime.png?v=6c4279bee4dc" alt="A humorous text interaction between an IRS agent and a taxpayer"></p>
+<p>(It felt a lot like this)</p>
+<p>It turns out that edge functions are built for small requests.  When they do connect to the database, they aren’t expected to do so for long.   An SQL function invoked by an edge function is invoked using the “anon” role’s API key, baked into Deno’s environment variables.</p>
+<pre><code>const supabase = createClient(Deno.env.get('SUPABASE_URL') ?? '', Deno.env.get('SUPABASE_ANON_KEY') ?? '');
+</code></pre>
+<p>This is the only browser safe access point, offering safety features such as row level security and a 3 second timeout.  Unfortunately, calculating a route is not exactly lightning fast, and ends up slower 3 seconds about two thirds of the time.  Luckily, Supabase allows us to modify this timeout through an internal sql query that looks like this.</p>
+<pre><code>ALTER ROLE  anon SET statement_timeout = '1min';
+</code></pre>
+<p>Anytime you find yourself modifying internal config values, it’s a good indicator that you are trying to do something outside of a service's core intended functionality. Even the less secure “service” role, the only alternative available from an edge function, defaults to an 8 second timeout.  Our function is doing something completely unexpected, and possibly ill advised, but within our project architecture, it’s the path that makes the most sense.</p>
+<h2>Lessons:</h2>
+<p>Over the development of Wanderlust we learned a lot about the rollercoaster of cloud computing, and how cloud services can assist or impede the development of a software project. Here are some of the lessons we learned:</p>
+<h3>Explore How Things Work</h3>
+<p>Despite their frustrating quirks, edge functions were a net positive for our project.  Taking the time to understand what buzzword services actually do is worth it.  The solution to your problems may lie nearby, albeit beneath several layers of buzzwords and jargon.</p>
+<h3>Be Self Sufficient</h3>
+<p>That being said, when issues do arise, expect to rely on yourself.  The developers of the software you’ve adopted may not have considered your use case in the first place, let alone taken time to write error messages for when you screw up.  It can be difficult to diagnose problems when the tool you're using is sequestered behind glossy UIs and exciting looking buttons.</p>
+<h3>Seek Out Documentation</h3>
+<p>Some documentation exists to convince non-technical product leads to invest in a product and are not helpful for developers. This means that sometimes a product has hidden use cases beyond how it’s documented. That developer facing documentation is out there! Go looking for it.  (And if it’s not, consider a different service.)</p>
+</div>
+      </div>
+    </div>
+
+    <footer>
+      <div>
+        <span>
+          <a href="/feed.xml">rss</a>
+          |
+          <a href="https://www.linkedin.com/in/redding-sauter-891363218/" target="blank">linkedin</a>
+          |
+          <a href="https://github.com/reddsaut" target="blank">github</a>
+        </span>
+      </div>
+
+      <div>
+        <span id="builtwith">
+          <em>Built with Eleventy v3.1.2</em>
+        </span>
+      </div>
+    </footer>
+
+  </body>
+</html>

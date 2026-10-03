@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" 
+		xmlns:xlink="http://www.w3.org/1999/xlink" 
+		width="655px" 
+		height="164px" 
+		viewBox="0 0 655 164">
+	<rect x="2" y="32" width="100" height="100" rx="15" ry="15" stroke="#000000" stroke-width="4" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/>
+	<switch>
+	<foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%">
+	<div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 98px; height: 1px; padding-top: 82px; margin-left: 3px;">
+	<div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+	<div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+	<span style="color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));">
+	<font style="font-size: 30px;">SPA Client</font>
+</span>
+</div>
+</div>
+</div>
+</foreignObject>
+<text x="52" y="86" fill="light-dark(#000000, #ffffff)" font-family="Helvetica" font-size="12px" text-anchor="middle">SPA Client</text>
+</switch>
+	<path d="M 482 17 C 482 8.72 520.06 2 567 2 C 589.54 2 611.16 3.58 627.1 6.39 C 643.04 9.21 652 13.02 652 17 L 652 147 C 652 155.28 613.94 162 567 162 C 520.06 162 482 155.28 482 147 Z" fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" pointer-events="all" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/>
+<path d="M 652 17 C 652 25.28 613.94 32 567 32 C 520.06 32 482 25.28 482 17" fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10" pointer-events="all" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/>
+	<switch>
+	<foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+	<div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 168px; height: 1px; padding-top: 95px; margin-left: 483px;">
+	<div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+	<div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+	<font style="font-size: 23px;">Postgres (PostGIS and pgRouting calculation)</font>
+</div>
+</div>
+</div>
+</foreignObject>
+<text x="567" y="98" fill="light-dark(#000000, #ffffff)" font-family="Helvetica" font-size="12px" text-anchor="middle">Postgres (PostGIS and pgRout...</text>
+</switch>
+	<rect x="253" y="17" width="130" height="130" rx="19.5" ry="19.5" fill="none" stroke="#000000" stroke-width="4" pointer-events="all" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/>
+	<switch>
+	<foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+	<div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 128px; height: 1px; padding-top: 82px; margin-left: 254px;">
+	<div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+	<div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+	<font style="font-size: 30px;">Python Server</font>
+</div>
+</div>
+</div>
+</foreignObject>
+<text x="318" y="86" fill="light-dark(#000000, #ffffff)" font-family="Helvetica" font-size="12px" text-anchor="middle">Python Server</text>
+</switch>
+	<path d="M 102 57 L 242.91 50" fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/>
+<path d="M 249.65 49.67 L 240.88 54.61 L 242.91 50 L 240.44 45.62 Z" fill="#000000" stroke="#000000" stroke-width="3" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/>
+	<switch>
+	<foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+	<div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 51px; margin-left: 176px;">
+	<div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+	<div style="display: inline-block; font-size: 11px; font-family: Helvetica; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: nowrap; ">
+	<span style="white-space: pre-wrap; font-family: Roboto, sans-serif;">
+	<font style="font-size: 40px;">ϟ</font>
+</span>
+</div>
+</div>
+</div>
+</foreignObject>
+<text x="176" y="54" fill="light-dark(#000000, #ffffff)" font-family="Helvetica" font-size="11px" text-anchor="middle">ϟ</text>
+</switch>
+	<path d="M 253 114.5 L 112.09 107.5" fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/>
+<path d="M 105.35 107.17 L 114.56 103.12 L 112.09 107.5 L 114.12 112.11 Z" fill="#000000" stroke="#000000" stroke-width="3" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/>
+	<switch>
+	<foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+	<div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 114px; margin-left: 179px;">
+	<div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
+	<div style="display: inline-block; font-size: 11px; font-family: Helvetica; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: nowrap; ">
+	<span style="white-space: pre-wrap; font-family: Roboto, sans-serif;">
+	<font style="font-size: 40px;">ϟ</font>
+</span>
+</div>
+</div>
+</div>
+</foreignObject>
+<text x="179" y="117" fill="light-dark(#000000, #ffffff)" font-family="Helvetica" font-size="11px" text-anchor="middle">ϟ</text>
+</switch>
+	<path d="M 383 49.5 L 471.9 49.5" fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/>
+<path d="M 478.65 49.5 L 469.65 54 L 471.9 49.5 L 469.65 45 Z" fill="#000000" stroke="#000000" stroke-width="3" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/>
+
+	<path d="M 482 114.5 L 393.1 114.5" fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" pointer-events="stroke" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/>
+<path d="M 386.35 114.5 L 395.35 110 L 393.1 114.5 L 395.35 119 Z" fill="#000000" stroke="#000000" stroke-width="3" stroke-miterlimit="10" pointer-events="all" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/>
+
+<switch>
+<a transform="translate(0,-5)" xlink:href="https://www.drawio.com/doc/faq/svg-export-text-problems" target="_blank">
+	<text text-anchor="middle" font-size="10px" x="50%" y="100%">Text is not SVG - cannot display</text>
+</a>
+</switch>
+</svg>
